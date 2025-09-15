@@ -11,7 +11,11 @@ import SwiftUI
 struct SwiftUIShaderSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if #available(iOS 18.0, *) {
+                ContentView(manager: .init())
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
 }
