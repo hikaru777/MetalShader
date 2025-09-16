@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		5D47532D2C073F9700EA6DAF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D47532C2C073F9700EA6DAF /* Kingfisher */; };
 		5D47532F2C0744F200EA6DAF /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D47532E2C0744F200EA6DAF /* MotionManager.swift */; };
+		5D69FF0F2E79E905000820EF /* BaseShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FF0A2E79E905000820EF /* BaseShader.metal */; };
+		5D69FF102E79E905000820EF /* SlopeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FF0D2E79E905000820EF /* SlopeShader.metal */; };
+		5D69FF112E79E905000820EF /* PaintShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FF0C2E79E905000820EF /* PaintShader.metal */; };
+		5D69FF122E79E905000820EF /* AuroraShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FF092E79E905000820EF /* AuroraShader.metal */; };
+		5D69FF132E79E905000820EF /* NoiseShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5D69FF0B2E79E905000820EF /* NoiseShader.metal */; };
 		5D7FA3AC2BF4B66500A0E1A0 /* SwiftUIShaderSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7FA3AB2BF4B66500A0E1A0 /* SwiftUIShaderSampleApp.swift */; };
 		5D7FA3AE2BF4B66500A0E1A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7FA3AD2BF4B66500A0E1A0 /* ContentView.swift */; };
 		5D7FA3B02BF4B66700A0E1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7FA3AF2BF4B66700A0E1A0 /* Assets.xcassets */; };
 		5D7FA3B32BF4B66700A0E1A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7FA3B22BF4B66700A0E1A0 /* Preview Assets.xcassets */; };
-		5D7FA3BA2BF4B67F00A0E1A0 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5D7FA3B92BF4B67F00A0E1A0 /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D47532E2C0744F200EA6DAF /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		5D69FF092E79E905000820EF /* AuroraShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AuroraShader.metal; sourceTree = "<group>"; };
+		5D69FF0A2E79E905000820EF /* BaseShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BaseShader.metal; sourceTree = "<group>"; };
+		5D69FF0B2E79E905000820EF /* NoiseShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NoiseShader.metal; sourceTree = "<group>"; };
+		5D69FF0C2E79E905000820EF /* PaintShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PaintShader.metal; sourceTree = "<group>"; };
+		5D69FF0D2E79E905000820EF /* SlopeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SlopeShader.metal; sourceTree = "<group>"; };
 		5D7FA3A82BF4B66500A0E1A0 /* SwiftUIShaderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIShaderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7FA3AB2BF4B66500A0E1A0 /* SwiftUIShaderSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIShaderSampleApp.swift; sourceTree = "<group>"; };
 		5D7FA3AD2BF4B66500A0E1A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D7FA3AF2BF4B66700A0E1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D7FA3B22BF4B66700A0E1A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5D7FA3B92BF4B67F00A0E1A0 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D69FF0E2E79E905000820EF /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				5D69FF092E79E905000820EF /* AuroraShader.metal */,
+				5D69FF0A2E79E905000820EF /* BaseShader.metal */,
+				5D69FF0B2E79E905000820EF /* NoiseShader.metal */,
+				5D69FF0C2E79E905000820EF /* PaintShader.metal */,
+				5D69FF0D2E79E905000820EF /* SlopeShader.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
 		5D7FA39F2BF4B66500A0E1A0 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +81,8 @@
 				5D7FA3AD2BF4B66500A0E1A0 /* ContentView.swift */,
 				5D7FA3AF2BF4B66700A0E1A0 /* Assets.xcassets */,
 				5D7FA3B12BF4B66700A0E1A0 /* Preview Content */,
-				5D7FA3B92BF4B67F00A0E1A0 /* Shader.metal */,
 				5D47532E2C0744F200EA6DAF /* MotionManager.swift */,
+				5D69FF0E2E79E905000820EF /* Shaders */,
 			);
 			path = SwiftUIShaderSample;
 			sourceTree = "<group>";
@@ -152,7 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D47532F2C0744F200EA6DAF /* MotionManager.swift in Sources */,
-				5D7FA3BA2BF4B67F00A0E1A0 /* Shader.metal in Sources */,
+				5D69FF0F2E79E905000820EF /* BaseShader.metal in Sources */,
+				5D69FF102E79E905000820EF /* SlopeShader.metal in Sources */,
+				5D69FF112E79E905000820EF /* PaintShader.metal in Sources */,
+				5D69FF122E79E905000820EF /* AuroraShader.metal in Sources */,
+				5D69FF132E79E905000820EF /* NoiseShader.metal in Sources */,
 				5D7FA3AE2BF4B66500A0E1A0 /* ContentView.swift in Sources */,
 				5D7FA3AC2BF4B66500A0E1A0 /* SwiftUIShaderSampleApp.swift in Sources */,
 			);
